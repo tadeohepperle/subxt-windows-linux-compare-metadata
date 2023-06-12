@@ -1,0 +1,14 @@
+how the hex, scale and json files where generated on windows and linux:
+
+```
+subxt metadata --url wss://rpc.polkadot.io:443 -f hex > polkadot_win.hex
+subxt metadata --url wss://rpc.polkadot.io:443 -f bytes > polkadot_win.scale
+subxt metadata --url wss://rpc.polkadot.io:443 -f json > polkadot_win.json
+```
+
+how the scale_hexdump files were generated:
+
+```
+<./polkadot_lin.scale | hexdump > polkadot_lin.scale_hexdump
+<./polkadot_win.scale | hexdump > polkadot_win.scale_hexdump
+```
